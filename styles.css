@@ -1,0 +1,239 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    /* background-color: aqua; */
+}
+
+body {
+    background-color: #006570;
+}
+
+.navbar {
+    height: 30px;
+    /* background-color: aqua; */
+    padding: 15px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+}
+
+.logo {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.nav-items {
+    display: flex;
+    width: 30%;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.card-heading {
+    /* background-color: #c1b4d1; */
+    padding-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    color: white;
+}
+
+.hero-page {
+    height: 90vh;
+    width: 100wh;
+    background-image: url('./images/background.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-repeat: no-repeat;
+
+}
+.info-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    align-items: center;
+}
+
+h2 {
+    font-size: 70px;
+    color: whitesmoke;
+    font-weight: 600;
+    
+}
+button {
+    display: inline-block;
+    outline: none;
+    cursor: pointer;
+    font-weight: 500;
+    border: 1px solid transparent;
+    border-radius: 2px;
+    height: 36px;
+    line-height: 34px;
+    font-size: 14px;
+    color: #ffffff;
+    background-color: #007c89;
+    transition: background-color 0.2s ease-in-out 0s, opacity 0.2s ease-in-out 0s;
+    padding: 0 18px;
+    :hover {
+        color: #ffffff;
+        background-color: #006570;
+    }
+
+}
+
+.cards {
+    height: 50vh;
+    /* background-color: #c1b4d1; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+}
+.card {
+    /* background-color: #007c89; */
+    height: 300px;
+    width:  300px;
+    display: flex;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+
+    
+    /* -webkit-filter: blur(8px); */
+
+    &:hover {
+        cursor: pointer;
+        box-shadow: 7px 10px 20px #635c6b;
+        transform: translateY(-2px);
+    }
+
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: larger;
+}
+
+.hawai {
+    background-image: url('./images/hawai.jpg');
+    background-size: 300px 300px;
+}
+.switzerland {
+    background-image: url('./images/switzerland.jpeg');
+    background-size: 300px 300px;
+}
+
+
+.lakshdeep {
+    background-image: url('./images/lakshdeep.jpg');
+    background-size: 300px 300px;
+}
+
+.tokyo {
+    background-image: url('./images/tokyo.webp');
+    background-size: 300px 300px;
+}
+
+.services {
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    gap: 8rem;
+    justify-content: center;
+    /* justify-content: space-between; */
+    background-color: rgb(248, 219, 224);
+    /* padding: 10px; */
+}
+
+.service {
+    background-color: white;
+    height: 200px;
+    width:  200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    box-shadow: 5px 5px 5px #635c6b;
+
+    &:hover {
+        cursor: pointer;
+        box-shadow: 7px 10px 20px #635c6b;
+        transform: translateY(-2px);
+    }
+
+}
+
+.desc {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.services-heading {
+    background-color: rgb(248, 219, 224);;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    color: white;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    color: white;
+    align-items: center;
+    height: 40px;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .hero-page {
+        flex-direction: column;
+        padding: 1rem;
+    }
+    .card-heading {
+        display: flex;
+        margin-left: 4rem;
+    }
+    .cards {
+        height: 100%;
+        flex-direction: column;
+        gap: 5rem;
+    }
+    
+    .services {
+        height: 100%;
+        flex-direction: column;
+    }
+    .footer {
+        margin: 1rem;
+    }
+}
+
+
+
